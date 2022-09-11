@@ -1,0 +1,38 @@
+﻿<Window x:Class="RegistrationFormLocalize.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrationFormLocalize"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <Label x:Name="UserRegistration" HorizontalAlignment="Center" FontSize="16" FontWeight="Light"></Label>
+                <Label x:Name="Login" FontSize="12" FontWeight="DemiBold" Margin="30,10,0,0"></Label>
+                <TextBox x:Name="SetLogin" Width="200" HorizontalAlignment="Left" FontSize="12" FontWeight="ExtraLight" Margin="30,3,0,0"></TextBox>
+                <Label x:Name="Password" FontSize="12" FontWeight="DemiBold" Margin="30,5,0,0"></Label>
+                <TextBox x:Name="SetPassword" Width="200" HorizontalAlignment="Left" FontSize="12" FontWeight="ExtraLight" Margin="30,3,0,0"></TextBox>
+                <Label x:Name="RepeatPassword" FontSize="12" FontWeight="DemiBold" Margin="30,5,0,0"></Label>
+                <TextBox x:Name="SetPassword1" Width="200" HorizontalAlignment="Left" FontSize="12" FontWeight="ExtraLight" Margin="30,3,0,0"></TextBox>
+                <Button x:Name="LogIn" Margin="100,10,100,0"></Button>
+            </StackPanel>
+        </Grid>
+        <StackPanel>
+            <Label x:Name="ChooseLanguage"></Label>
+            <RadioButton x:Name="Russian" Checked="Russian_Checked"></RadioButton>
+            <RadioButton x:Name="English" Checked="English_Checked"></RadioButton>
+        </StackPanel>
+    </Grid>
+</Window>

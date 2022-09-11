@@ -1,0 +1,17 @@
+﻿<Window x:Class="LocalizeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalizeApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="73" Width="416">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Click="OKBtn_Click" x:Name="OKBtn" Grid.Column="0"></Button>
+        <Button x:Name="CancelBtn" Grid.Column="1"></Button>
+    </Grid>
+</Window>
